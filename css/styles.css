@@ -4,7 +4,7 @@
   --header-team-card-background: #ffffff;
   --headline-color: #2e2f42;
   --par-color: #434455;
-  --acctent-color: #e7e9fc;
+  --accent-color: #e7e9fc;
   --light-mode-dialogs: #f4f4fd;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -18,6 +18,13 @@ body {
   background-color: var(--header-team-card-background);
 }
 
+/* Container */
+.container {
+  width: 1152px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
 .buttons-cursor {
   cursor: pointer;
 }
@@ -25,7 +32,7 @@ body {
 /* header */
 
 .header-border-color {
-  border-bottom: 1px solid var(--acctent-color);
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .header-web-style {
@@ -54,6 +61,8 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navi.link {
@@ -88,12 +97,14 @@ body {
 /* 1st section */
 .hero-section {
   background: var(--headline-color);
+  text-align: center;
 }
 
 .header-hero {
+  margin-bottom: 48px;
+  margin-top: 0;
   font-weight: var(--font-weight-bold);
   font-size: 56px;
-  text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--header-team-card-background);
@@ -102,26 +113,34 @@ body {
 .order-button-st {
   font-family: "Roboto", sans-serif;
   background: var(--order-button-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  padding: 16px 32px;
   border-radius: 4px;
+  border: 0px;
   /* text */
   font-weight: var(--font-weight-medium);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--header-team-card-background);
+  text-align: center;
 }
 
 .order-button-st:hover,
 .order-button-st:focus {
   background: var(--pressed-state);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 /* section 2 */
 
+.pdng-sections {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .headlines-scnd-section {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-weight: var(--font-weight-medium);
   font-size: 20px;
   line-height: 1.2;
@@ -130,6 +149,8 @@ body {
 }
 
 .scnd-sec-par {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -139,6 +160,8 @@ body {
 /* third section */
 
 .headlines-scnd-rang {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 1.11;
@@ -158,7 +181,15 @@ body {
   background-color: var(--header-team-card-background);
 }
 
+.our-team-headline {
+  outline: 1px dashed turquoise;
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+
 .thrd-rang-headlines {
+  margin-top: 32px;
+  margin-bottom: 8px;
   font-weight: var(--font-weight-medium);
   font-size: 20px;
   line-height: 1.2;
@@ -166,11 +197,16 @@ body {
   color: var(--headline-color);
 }
 
+.list > .our-team > .scnd-sec-par {
+  padding-bottom: 32px;
+}
+
 /* Footer */
 .footer-color {
   background: var(--headline-color);
 }
 .footer-logo-web {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   color: var(--order-button-color);
   font-weight: var(--font-weight-raleway-ex-bold);
@@ -178,6 +214,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 16px;
+  margin-top: 100px;
 }
 
 .footer-studio-style {
@@ -195,13 +233,20 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-mode-dialogs);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 100px;
 }
 /* portfolio buttons*/
 .buttons {
+  /* btns */
   font-family: "Roboto", sans-serif;
   background: var(--light-mode-dialogs);
-  border: 1px solid var(--acctent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
+  display: flex;
+  padding: 12px 24px;
+  /* text */
   font-weight: var(--font-weight-medium);
   font-size: 16px;
   line-height: 1.5;
@@ -212,7 +257,7 @@ body {
 .buttons:hover,
 .buttons:active,
 .buttons:focus {
-  background: var(--pressed-state);
+  background-color: var(--pressed-state);
   color: var(--header-team-card-background);
 }
 
@@ -232,3 +277,5 @@ body {
   letter-spacing: 0.02em;
   color: var(--par-color);
 }
+
+/* попытка на кнопки портфолио  */
