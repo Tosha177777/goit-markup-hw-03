@@ -20,28 +20,30 @@
   <body>
     <!-- Header -->
     <header class="header-border-color">
-      <div class="container">
-        <nav>
-          <a href="./index.html" class="link header-web-style"
-            >WEB<span class="header-studio-style">Studio</span>
-          </a>
-          <ul class="list header-list">
-            <li><a href="./index.html" class="navi link">Studio</a></li>
-            <li><a href="./portfolio.html" class="navi link">Portfolio</a></li>
-            <li><a href="" class="navi link">Contacts</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="container main-nav">
+        <a href="./index.html" class="link header-web-style"
+          >WEB<span class="header-studio-style">Studio</span>
+        </a>
+        <ul class="list header-list">
+          <li class="item">
+            <a href="./index.html" class="navi link">Studio</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="navi link">Portfolio</a>
+          </li>
+          <li class="item"><a href="" class="navi link">Contacts</a></li>
+        </ul>
+      </nav>
       <!-- Addresses -->
-      <div class="container">
+      <div class="container main-nav">
         <address class="addresses link">
-          <ul class="list">
-            <li>
+          <ul class="adrs-ul list">
+            <li class="item">
               <a href="mailto:info@devstudio.com" class="addresses link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+110001111111" class="addresses link"
                 >+11 (000) 111-11-11</a
               >
@@ -54,125 +56,135 @@
     <main>
       <!-- Section -->
       <section>
-        <h1 hidden>Filters</h1>
-        <ul class="list port-btn">
-          <li>
-            <button class="buttons buttons-cursor" type="button">All</button>
-          </li>
-          <li>
-            <button class="buttons buttons-cursor" type="button">
-              Web Site
-            </button>
-          </li>
-          <li>
-            <button class="buttons buttons-cursor" type="button">App</button>
-          </li>
-          <li>
-            <button class="buttons buttons-cursor" type="button">Design</button>
-          </li>
-          <li>
-            <button class="buttons buttons-cursor" type="button">
-              Marketing
-            </button>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a href="" class="link">
-              <img
-                src="./images/portfolio/img-app.jpg"
-                alt="Banking App"
-                width="360"
-              />
-              <h2 class="port-scnd-headlines">Banking App Interface Concept</h2>
-              <p class="portfolio-par">App</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link">
-              <img src="./images/portfolio/img-nfc.jpg" alt="nfc" width="360" />
-              <h2 class="port-scnd-headlines">Cashless Payment</h2>
-              <p class="portfolio-par">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link">
-              <img
-                src="./images/portfolio/img-meditation-app.jpg"
-                alt="meditation app"
-                width="360"
-              />
-              <h2 class="port-scnd-headlines">Meditation App</h2>
-              <p class="portfolio-par">App</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link">
-              <img
-                src="./images/portfolio/img-taxi.jpg"
-                alt="driver"
-                width="360"
-              />
-              <h2 class="port-scnd-headlines">Taxi Service</h2>
-              <p class="portfolio-par">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link">
-              <img
-                src="./images/portfolio/img-purple-screens.jpg"
-                alt="purple screens"
-                width="360"
-              />
-              <h2 class="port-scnd-headlines">Screen Illustrations</h2>
-              <p class="portfolio-par">Design</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link">
-              <img
-                src="./images/portfolio/img-girl-orange.jpg"
-                alt="Girl in orange sweater"
-                width="360"
-              />
-              <h2 class="port-scnd-headlines">Online Courses</h2>
-              <p class="portfolio-par">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link">
-              <img
-                src="./images/portfolio/img-design-conception.jpg"
-                alt="design conception"
-                width="360"
-              />
-              <h2 class="port-scnd-headlines">Instagram Stories Concept</h2>
-              <p class="portfolio-par">Design</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link">
-              <img
-                src="./images/portfolio/img-vegetables-in-bag.jpg"
-                alt="vegetables in bag"
-                width="360"
-              />
-              <h2 class="port-scnd-headlines">Organic Food</h2>
-              <p class="portfolio-par">Web Site</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link">
-              <img
-                src="./images/portfolio/img-making-latte.jpg"
-                alt="Making latte"
-                width="360"
-              />
-              <h2 class="port-scnd-headlines">Fresh Coffee</h2>
-              <p class="portfolio-par">Web Site</p></a
-            >
-          </li>
-        </ul>
+        <div class="container">
+          <h1 hidden>Filters</h1>
+          <ul class="list port-btn">
+            <li>
+              <button class="buttons buttons-cursor" type="button">All</button>
+            </li>
+            <li>
+              <button class="buttons buttons-cursor" type="button">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button class="buttons buttons-cursor" type="button">App</button>
+            </li>
+            <li>
+              <button class="buttons buttons-cursor" type="button">
+                Design
+              </button>
+            </li>
+            <li>
+              <button class="buttons buttons-cursor" type="button">
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <ul class="list">
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-app.jpg"
+                  alt="Banking App"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">
+                  Banking App Interface Concept
+                </h2>
+                <p class="portfolio-par">App</p></a
+              >
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-nfc.jpg"
+                  alt="nfc"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">Cashless Payment</h2>
+                <p class="portfolio-par">Marketing</p></a
+              >
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-meditation-app.jpg"
+                  alt="meditation app"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">Meditation App</h2>
+                <p class="portfolio-par">App</p></a
+              >
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-taxi.jpg"
+                  alt="driver"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">Taxi Service</h2>
+                <p class="portfolio-par">Marketing</p></a
+              >
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-purple-screens.jpg"
+                  alt="purple screens"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">Screen Illustrations</h2>
+                <p class="portfolio-par">Design</p></a
+              >
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-girl-orange.jpg"
+                  alt="Girl in orange sweater"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">Online Courses</h2>
+                <p class="portfolio-par">Marketing</p></a
+              >
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-design-conception.jpg"
+                  alt="design conception"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">Instagram Stories Concept</h2>
+                <p class="portfolio-par">Design</p></a
+              >
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-vegetables-in-bag.jpg"
+                  alt="vegetables in bag"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">Organic Food</h2>
+                <p class="portfolio-par">Web Site</p></a
+              >
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/portfolio/img-making-latte.jpg"
+                  alt="Making latte"
+                  width="360"
+                />
+                <h2 class="port-scnd-headlines">Fresh Coffee</h2>
+                <p class="portfolio-par">Web Site</p></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->

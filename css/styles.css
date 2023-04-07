@@ -20,8 +20,8 @@ body {
 
 /* Container */
 .container {
-  width: 1152px;
-  padding: 0 12px;
+  width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -57,7 +57,21 @@ body {
   text-decoration: none;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* header-nav */
+
+.header-list {
+  display: flex;
+}
+
+.header-list .item + .item {
+  /* outline: 1px solid teal; */
+  margin-left: 40px;
+}
 
 .list {
   list-style: none;
@@ -65,7 +79,11 @@ body {
   padding: 0;
 }
 
-.navi.link {
+.header-list .navi.link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -73,12 +91,22 @@ body {
   color: var(--headline-color);
 }
 
-.navi.link:active,
-.navi.link:focus,
-.navi.link:hover {
+.header-list .navi.link:active,
+.header-list .navi.link:focus,
+.header-list .navi.link:hover {
   color: var(--pressed-state);
 }
 /* header address */
+
+/* Contacts */
+
+.adrs-ul {
+  display: flex;
+}
+
+.adrs-ul .item + .item {
+  margin-left: 40px;
+}
 
 .addresses.link {
   font-style: normal;
@@ -101,8 +129,12 @@ body {
 }
 
 .header-hero {
+  width: 496px;
   margin-bottom: 48px;
   margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+
   font-weight: var(--font-weight-bold);
   font-size: 56px;
   line-height: 1.07;
@@ -111,12 +143,15 @@ body {
 }
 
 .order-button-st {
-  font-family: "Roboto", sans-serif;
-  background: var(--order-button-color);
   display: flex;
   padding: 16px 32px;
+
+  font-family: "Roboto", sans-serif;
+  background: var(--order-button-color);
   border-radius: 4px;
   border: 0px;
+  margin-right: auto;
+  margin-left: auto;
   /* text */
   font-weight: var(--font-weight-medium);
   font-size: 16px;
@@ -133,7 +168,7 @@ body {
 
 /* section 2 */
 
-.pdng-sections {
+.pdng-sections.second {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -159,6 +194,10 @@ body {
 
 /* third section */
 
+.pdng-sections.thrd {
+  padding-bottom: 120px;
+}
+
 .headlines-scnd-rang {
   margin-top: 0;
   margin-bottom: 0;
@@ -182,7 +221,6 @@ body {
 }
 
 .our-team-headline {
-  outline: 1px dashed turquoise;
   padding-top: 120px;
   margin-bottom: 72px;
 }
@@ -264,6 +302,9 @@ body {
 /* Portfolio Headlines 2 */
 
 .port-scnd-headlines {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  padding-left: 8px;
   font-weight: var(--font-weight-medium);
   font-size: 20px;
   line-height: 1.2;
@@ -272,10 +313,12 @@ body {
 }
 
 .portfolio-par {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 32px;
+  padding-left: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--par-color);
 }
-
-/* попытка на кнопки портфолио  */
