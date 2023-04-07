@@ -19,24 +19,24 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header-border-color">
-      <nav class="container main-nav">
-        <a href="./index.html" class="link header-web-style"
-          >WEB<span class="header-studio-style">Studio</span>
-        </a>
-        <ul class="list header-list">
-          <li class="item">
-            <a href="./index.html" class="navi link">Studio</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="navi link">Portfolio</a>
-          </li>
-          <li class="item"><a href="" class="navi link">Contacts</a></li>
-        </ul>
-      </nav>
-      <!-- Addresses -->
+    <header class="header-border-color main-nav">
       <div class="container main-nav">
-        <address class="addresses link">
+        <nav class="main-nav">
+          <a href="./index.html" class="link header-web-style"
+            >WEB<span class="header-studio-style">Studio</span>
+          </a>
+          <ul class="list header-list">
+            <li class="item">
+              <a href="./index.html" class="navi link">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="navi link">Portfolio</a>
+            </li>
+            <li class="item"><a href="" class="navi link">Contacts</a></li>
+          </ul>
+        </nav>
+        <!-- Addresses -->
+        <address class="addresses link main-nav">
           <ul class="adrs-ul list">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="addresses link"
@@ -56,16 +56,21 @@
     <main>
       <!-- Section 1 -->
       <section class="hero-section">
-        <h1 class="header-hero">Effective Solutions for Your Business</h1>
-        <button class="order-button-st buttons-cursor" type="button">
-          Order Service
-        </button>
+        <div class="container hero-cont">
+          <h1 class="header-hero">
+            Effective Solutions <br />
+            for Your Business
+          </h1>
+          <button class="order-button-st buttons-cursor" type="button">
+            Order Service
+          </button>
+        </div>
       </section>
       <!-- Section 2 -->
       <section class="pdng-sections second">
         <div class="container">
           <h2 class="headlines-scnd-rang" hidden>Advantages</h2>
-          <ul class="list">
+          <ul class="list advantages">
             <li>
               <h3 class="headlines-scnd-section">Strategy</h3>
               <p class="scnd-sec-par">
@@ -100,8 +105,8 @@
       <!-- Section 3 -->
       <section class="pdng-sections thrd">
         <div class="container">
-          <h2 class="headlines-scnd-rang">What are we doing</h2>
-          <ul class="list">
+          <h2 class="headlines-scnd-rang thrd-sec">What are we doing</h2>
+          <ul class="list index-imgs">
             <li><img src="./images/img1.jpg" alt="computer" width="360" /></li>
             <li>
               <img src="./images/img2.jpg" alt="layers of screen" width="360" />
@@ -114,7 +119,7 @@
       <section class="team-section">
         <div class="container">
           <h2 class="headlines-scnd-rang our-team-headline">Our Team</h2>
-          <ul class="list">
+          <ul class="list index-imgs team-names">
             <li class="our-team">
               <img src="./images/img-mark.jpg" alt="Mark's photo" width="264" />
               <h3 class="thrd-rang-headlines">Mark Guerrero</h3>
